@@ -70,5 +70,3 @@ ALTER TABLE [dbo].[SongsArtists]  WITH NOCHECK ADD  CONSTRAINT [FK_SA_idASong] F
 REFERENCES [dbo].[Song] ([id])
 GO
 ALTER TABLE [dbo].[SongsArtists] CHECK CONSTRAINT [FK_SA_idASong]
-
-

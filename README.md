@@ -77,6 +77,10 @@ To install the environment you must follow the following steps
     ```sh
     $ cd SpotifyApi/
     ```
+- Create the network, run the command
+    ```sh
+    $ docker network create -d bridge --subnet 192.0.0.0/24 --gateway 192.0.0.1 spotify-net
+    ```
 - Once inside the directory **SpotifyApi**, run the command
     ```sh
     $ docker-compose up --build
@@ -107,7 +111,7 @@ To be able to make the connection and the creation of the database, we must perf
     ```
 - Click on the connect option
 - Once the database server is created, we proceed to create the database
-- Let's go to the directory **Database** open the file **[Script.sql](Database/Script.sql)**
+- Let's go to the directory **Database** open the file **[Database/Script.sql](Database/Script.sql)**
 - In the client SqlServer open a **new query tab** and paste the sentence to create database
     ```sh
     CREATE DATABASE ApiSpotify;
@@ -118,11 +122,20 @@ To be able to make the connection and the creation of the database, we must perf
 
 ### Consume Api
 
-To consume the api you must follow the endpoints in the file **[api.html](ApiSpecification/api.html)**
+To consume the api you must follow the endpoints in the file **[ApiSpecification/api.html](ApiSpecification/api.html)**
 
 **[Base Url](http://localhost/api)**:
 ```sh
 http://localhost/api
 ```
+
+To consume the api a collection of Postman is provided **[ApiSpecification/PatagonianTest.postman_collection.json](ApiSpecification/PatagonianTest.postman_collection.json)**
+
+To use the Postman collection download and install [Postman](https://www.postman.com/downloads/)
+
+When finished to install the Postman import the collection **[ApiSpecification/PatagonianTest.postman_collection.json](ApiSpecification/PatagonianTest.postman_collection.json)**
+
+The first endpoint that you have to execute is **/artists/{artistsIds}**
+
 
 Project created by **[Johnatan Alexis Urbano Guzmán](https://www.johnatan.dev/)**
