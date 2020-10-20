@@ -132,13 +132,20 @@ mediaType: application/json
             application/json:
               example: |
                 {"message": "Song not found"}
-/artists/{artistsIds}:
-  description: Collection of conect, load and charge the data from Spotify Api, into local database
-  get:
-    description: Get the artists songs with `artistsIds = {artistsId,artistsId,artistsId}`, limit of 15 artistsId iseparated by commas
-    responses:
-        200:
+/artists:
+  description: Collection of artists
+  /{artistsIds}:
+    description: Endpoint that allows you to consult the songs of the sopitify api, and later is in charge of persisting it in the local SpotyfiApi database
+    get:
+      description: Get the artists songs with `artistsIds = {artistsId,artistsId,artistsId}`, limit of 15 artistsId iseparated by commas
+      responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  Finish
+          404:
           body:
             application/json:
               example: |
-                Finish
+                {"message": "Song not found"}

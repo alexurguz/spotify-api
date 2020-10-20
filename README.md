@@ -48,6 +48,7 @@ The project is structured as follows:
 - NetStandard:Library(2.1.0)
 ##### NuGet
 - AutoMapper.Extensions.Microsoft.DependencyInjection(8.1.0)
+- EFCore.BulkExtensions(3.2.5)
 - FluentValidation.AspNetCore(8.6.3)
 - Microsoft.AspNetCore.Mvc.Core(2.2.5)
 - Microsoft.EntityFrameworkCore(3.1.9)
@@ -66,6 +67,7 @@ The project is structured as follows:
 
 To install the environment you must follow the following steps
 - Download and install [Docker](https://www.docker.com/products/docker-desktop)
+- In your Docker dashboard configure the **Memory:4.00GB**. Go to **Configure->Resources**
 - Download the source code of **SpotifyApi**
 - In the root directory you will find the following folders:
     1. **SpotifyApi**: Folder with the solution the api projects.

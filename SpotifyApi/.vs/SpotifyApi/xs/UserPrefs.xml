@@ -1,30 +1,10 @@
 ﻿<Properties StartupConfiguration="{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}|Spotify.Api">
   <MonoDevelop.Ide.ItemProperties.SpotifyApi.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Spotify.Api/appsettings.json">
-    <Files>
-      <File FileName="SpotifyApi.Infrastructure/Validators/SongsQueryFilterValidator.cs" Line="13" Column="54" />
-      <File FileName="SpotifyApi.Infrastructure/Validators/SongQueryFilterValidator.cs" Line="1" Column="14" />
-      <File FileName="Spotify.Api/Controllers/SongController.cs" Line="53" Column="38" />
-      <File FileName="Spotify.Api/appsettings.json" Line="3" Column="5" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SpotifyApi" expanded="True">
-            <Node name="SpotifyApi.Api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
-            </Node>
-            <Node name="SpotifyApi.Core" expanded="True">
-              <Node name="QueryFilters" expanded="True" />
-            </Node>
-            <Node name="SpotifyApi.Infrastructure" expanded="True">
-              <Node name="Filters" expanded="True" />
-              <Node name="Repositories" expanded="True" />
-              <Node name="Validators" expanded="True" />
-            </Node>
-            <Node name="SpotifyApi.Utilities" expanded="True" />
-          </Node>
+          <Node name="SpotifyApi" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
