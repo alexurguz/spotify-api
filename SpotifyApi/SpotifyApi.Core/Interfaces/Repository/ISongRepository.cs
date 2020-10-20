@@ -9,6 +9,7 @@ namespace SpotifyApi.Core.Interfaces.Repository
     {
         IEnumerable<Song> GetSongsByArtists(string artistName);
         Task<Song> GetSongsById(string songId);
-        Task Insertsong(Song song);
+        Task Insertsong(List<Song> listSongs);
+        Task<bool> ExistSong(string songId);
     }
 }

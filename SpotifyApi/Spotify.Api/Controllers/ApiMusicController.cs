@@ -25,9 +25,9 @@ namespace SpotifyApi.Api.Controllers
 
         [Route("api/artists")]
         [HttpGet]
-        public async Task<IActionResult> GetSongById([FromQuery]string artistsIds)
+        public async Task<IActionResult> GetSongById([FromQuery]ArtistQueryFilter filter)
         {
-            var artists = await _apiMusicUseCase.ProcessApi(artistsIds);
+            var artists = await _apiMusicUseCase.ProcessApi(filter.artistsIds);
             return Ok(artists);
         }
     }

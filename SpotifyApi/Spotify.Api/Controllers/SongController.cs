@@ -52,9 +52,9 @@ namespace SpotifyApi.Api.Controllers
 
         [Route("api/songs/{songId}")]
         [HttpGet]
-        public async Task<IActionResult> GetSongById(string songId)
+        public async Task<IActionResult> GetSongById([FromRoute]SongsQueryFilter filters)
         {
-            var songDto = await _songUseCase.GetSongById(songId);
+            var songDto = await _songUseCase.GetSongById(filters.songId);
             return Ok(songDto);
         }
     }

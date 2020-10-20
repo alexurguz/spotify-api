@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using SpotifyApi.Core.Entities;
 using SpotifyApi.Core.Interfaces.Repository;
 using SpotifyApi.Infrastructure.Data;
+using EFCore.BulkExtensions;
 
 namespace SpotifyApi.Infrastructure.Repositories
 {
@@ -40,18 +41,16 @@ namespace SpotifyApi.Infrastructure.Repositories
             return song;
         }
 
-        public async Task Insertsong(Song song)
+        public async Task Insertsong(List<Song> listSongs)
         {
-            try
-            {
-                if (_context.Song.Any(ar => ar.Id == song.Id)) return;
-                _context.Song.Add(song);
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException ex)
-            {
-                Console.WriteLine("Error "+ ex.StackTrace);
-            }
+            await _context.BulkInsertAsync<Song>(listSongs);
+        }
+
+        public async Task<bool> ExistSong(string songId)
+        {
+            bool response = false;
+            response = _context.Song.Any(so => so.Id == songId);
+            return response;
         }
 
     }

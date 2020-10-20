@@ -6,3 +6,4 @@
 /Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Debug/netstandard2.1/SpotifyApi.Utilities.csproj.CoreCompileInputs.cache
 /Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Debug/netstandard2.1/SpotifyApi.Utilities.dll
 /Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Debug/netstandard2.1/SpotifyApi.Utilities.pdb
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Debug/netstandard2.1/SpotifyApi.Utilities.csprojAssemblyReference.cache

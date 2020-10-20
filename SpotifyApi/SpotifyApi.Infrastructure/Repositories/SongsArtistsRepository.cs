@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using SpotifyApi.Core.Entities;
 using SpotifyApi.Core.Interfaces.Repository;
 using SpotifyApi.Infrastructure.Data;
+using EFCore.BulkExtensions;
+using System.Collections.Generic;
 
 namespace SpotifyApi.Infrastructure.Repositories
 {
@@ -16,18 +18,9 @@ namespace SpotifyApi.Infrastructure.Repositories
             _context = context;
         }
 
-        public async  Task InsertSongArtist(SongsArtists songsArtists)
+        public async  Task InsertSongArtist(List<SongsArtists> listSongsArtists)
         {
-            try
-            {
-                if (_context.SongsArtists.Any(sa => sa.IdArtist == songsArtists.IdArtist && sa.IdSong == songsArtists.IdSong)) return;
-                _context.SongsArtists.Add(songsArtists);
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException ex)
-            {
-                Console.WriteLine("Error " + ex.StackTrace);
-            }
+            await _context.BulkInsertAsync<SongsArtists>(listSongsArtists);
         }
     }
 }

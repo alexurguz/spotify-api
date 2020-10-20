@@ -47,7 +47,9 @@ namespace SpotifyApi.Core.UseCase
 
                 string nextPageAlbums = "start";
                 int offSetAlbums = 0;
-                
+
+                token = await _apiMusicRepository.RefreshToken();
+
                 while (nextPageAlbums != null)
                 {
                     var resultAlbums = await _apiMusicRepository.GetAlbumsByArtist(artist.Id, token.ToString(), offSetAlbums);
@@ -61,6 +63,9 @@ namespace SpotifyApi.Core.UseCase
                         string nextPageSongs = "start";
                         int offSetSongs = 0;
 
+                        List<Song> listSongs = new List<Song>();
+                        List<SongsArtists> listSongsArtists = new List<SongsArtists>();
+
                         while (nextPageSongs != null)
                         {
                             var resultSongs = await _apiMusicRepository.GetSongsByAlbum(jsonAlbums["id"].ToString(), token.ToString(), offSetSongs);
@@ -71,31 +76,40 @@ namespace SpotifyApi.Core.UseCase
                             // songs by album
                             foreach (JObject jsonSongs in songs.Children<JObject>())
                             {
-                                Song song = new Song
-                                {
-                                    Id = jsonSongs["id"].ToString(),
-                                    DiscNumber = (int)jsonSongs["disc_number"],
-                                    DurationMs = (int)jsonSongs["duration_ms"],
-                                    Explicit = (bool)jsonSongs["explicit"],
-                                    ExternalUrls = jsonSongs["external_urls"].ToString(),
-                                    Href = jsonSongs["href"].ToString(),
-                                    IsLocal = (bool)jsonSongs["is_local"],
-                                    Name = jsonSongs["name"].ToString(),
-                                    PreviewUrl = jsonSongs["preview_url"].ToString(),
-                                    Type = jsonSongs["type"].ToString(),
-                                    Uri = jsonSongs["uri"].ToString(),
-                                    IsPlayable = true,
-                                    TrackNumber = (int)jsonSongs["track_number"]
-                                };
-                                await _unitOfWork.SongRepository.Insertsong(song);
+                                if ( !await _unitOfWork.SongRepository.ExistSong(jsonSongs["id"].ToString()) ) {
 
-                                SongsArtists songsArtists = new SongsArtists
-                                {
-                                    IdArtist = artist.Id,
-                                    IdSong = jsonSongs["id"].ToString()
-                                };
+                                    Song song = new Song
+                                    {
+                                        Id = jsonSongs["id"].ToString(),
+                                        DiscNumber = (int)jsonSongs["disc_number"],
+                                        DurationMs = (int)jsonSongs["duration_ms"],
+                                        Explicit = (bool)jsonSongs["explicit"],
+                                        ExternalUrls = jsonSongs["external_urls"].ToString(),
+                                        Href = jsonSongs["href"].ToString(),
+                                        IsLocal = (bool)jsonSongs["is_local"],
+                                        Name = jsonSongs["name"].ToString(),
+                                        PreviewUrl = jsonSongs["preview_url"].ToString(),
+                                        Type = jsonSongs["type"].ToString(),
+                                        Uri = jsonSongs["uri"].ToString(),
+                                        IsPlayable = true,
+                                        TrackNumber = (int)jsonSongs["track_number"]
+                                    };
 
-                                await _unitOfWork.SongsArtistsRepository.InsertSongArtist(songsArtists);
+                                    SongsArtists songsArtists = new SongsArtists
+                                    {
+                                        IdArtist = artist.Id,
+                                        IdSong = jsonSongs["id"].ToString()
+                                    };
+
+                                    listSongs.Add(song);
+                                    listSongsArtists.Add(songsArtists);
+                                }
+                            }
+
+                            if (nextPageSongs == null && listSongs.Count > 0)
+                            {
+                                await _unitOfWork.SongRepository.Insertsong(listSongs);
+                                await _unitOfWork.SongsArtistsRepository.InsertSongArtist(listSongsArtists);
                             }
                         }
                     }
