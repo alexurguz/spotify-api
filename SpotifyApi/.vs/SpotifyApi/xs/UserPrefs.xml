@@ -8,9 +8,7 @@
             <Node name="SpotifyApi.Api" expanded="True">
               <Node name="appsettings.json" selected="True" />
             </Node>
-            <Node name="SpotifyApi.Core" expanded="True">
-              <Node name="UseCase" expanded="True" />
-            </Node>
+            <Node name="SpotifyApi.Core" expanded="True" />
           </Node>
         </State>
       </Pad>

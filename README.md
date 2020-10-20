@@ -12,6 +12,12 @@ The SpotifyApi is a project written in c#, the project aims to meet the challeng
     - Custom Exceptions
     - Pagination
 
+### Project IDE
+
+The SpotifyApi was developed whit [Visual Studio 2019 for mac](https://visualstudio.microsoft.com/es/vs/mac/net/) download and install to change and view code.
+
+To open the solution, in the IDE File->Open->search the project directory directory **SpotifyApi/SpotifyApi/Spotify.Api/SpotifyApi.sln**
+
 ### Project structure
 
 The project is structured as follows:
