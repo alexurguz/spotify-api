@@ -4,7 +4,7 @@ The SpotifyApi is a proyect is a project written in c#, the project aims to meet
 
     - clean architecture
     - Dependency injection
-    - Entity Framework Core
+    - Entity Framework Corec
     - Fluent Api
     - DTOs & Automapper
     - Business Logic and Repository Pattern
@@ -55,9 +55,71 @@ The project is structured as follows:
 - Microsoft.EntityFrameworkCore.Tools(3.1.9)
 - RestSharp(106.11.7)
 
-##### 4. SpotifyApi.Utilities(project commun utilities): 
+##### 5. SpotifyApi.Utilities(project commun utilities): 
 - Contains files of common utilities, constants, functions.
 ##### Platforms
 - NetStandard:Library(2.1.0)
 ##### NuGet
 - Newtonsoft.Json(12.0.3)
+
+### Install environment( container, database image, api server )
+
+To install the environment you must follow the following steps
+- Download and install [Docker](https://www.docker.com/products/docker-desktop)
+- Download the source code of **SpotifyApi** 
+- In the root directory you will find the following folders:
+    1. **SpotifyApi**: Folder with the solution the api projects.
+    2. **Database**: Folder with file.sql to database api.
+    3. **ApiSpecification**: Folder with files api specification **(api.html, api.raml)**
+- After installing Docker, go to the terminal and enter the directory **SpotifyApi**
+```sh
+$ cd SpotifyApi/
+```
+- Once inside the directory **SpotifyApi**, run the command
+```sh
+$ docker-compose up --build
+```
+- The container with the database image will be installed, and the application server on which the SpotifyApi solution will be published will be installed.
+- You can test that it has been published by accessing the test endpoint **[weatherforecast](http://localhost/weatherforecast)**
+- Will display the message 
+      
+      - Welcome to the Patagonian Test Api
+     
+### Install environment( create database )
+
+To be able to make the connection and the creation of the database, we must perform the following steps:
+
+- Download a database client SqlServer for example **[Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)**
+- Go to connections and select new connection
+- In the segment Connections details, register data connection
+```sh
+    Connection Type: Microsoft SQL Server
+    Server: localhost
+    Authentication type: SQL Login
+    User name: sa
+    Password: A_1234567O
+    Database: <Default>
+    Server group: <Default>
+    Name (optional): Any Name
+```
+- Click on the connect option
+- Once the database server is created, we proceed to create the database
+- Let's go to the directory **Database** open the file **[Script.sql](Database/Script.sql)**
+- In the client SqlServer open a **new query tab** and paste the sentence to create database
+```sh
+CREATE DATABASE ApiSpotify;
+```
+- After creating the database, you can copy and paste all the remaining content of the file, and proceed to execute it.
+
+**With this we conclude the installation of the environment**
+
+### Consume Api
+
+To consume the api you must follow the directions in the file **[api.html](ApiSpecification/api.html)**
+
+**[Base Url](http://localhost/api)**:
+```sh
+http://localhost/api
+```
+
+Project created by **[Johnatan Alexis Urbano Guzmán](https://www.johnatan.dev/)**
