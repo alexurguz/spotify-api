@@ -9501,7 +9501,7 @@
       "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/Spotify.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+        "/Users/johnatan/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

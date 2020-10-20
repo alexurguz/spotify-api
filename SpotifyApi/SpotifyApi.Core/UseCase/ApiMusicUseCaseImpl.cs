@@ -100,7 +100,6 @@ namespace SpotifyApi.Core.UseCase
                         }
                     }
                 }
-
             }
             return "Finish";
         }

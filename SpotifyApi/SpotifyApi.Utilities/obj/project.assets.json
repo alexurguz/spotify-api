@@ -64,7 +64,7 @@
       "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+        "/Users/johnatan/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"

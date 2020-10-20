@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uKMOATZGCsCf6RM/zp1xuvVS0da3xRihxmEt1mnYhlg0v0BjhdqPm6sU3myLrNulL2iZb/V89Hp1znSmr0oIuQ==",
+  "dgSpecHash": "itOs8lFEHija0d7Nt/I+fFJjCx2RBGR5KqCE6z9JPG6GBFiloD8oxaugJdLp8R7Vi6AYf74VT79txhD4Oks9zg==",
   "success": true,
   "projectFilePath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/Spotify.Api/SpotifyApi.Api.csproj",
   "expectedPackageFiles": [

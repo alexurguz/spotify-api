@@ -14,7 +14,7 @@
         "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/Spotify.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+          "/Users/johnatan/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -98,7 +98,7 @@
         "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+          "/Users/johnatan/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -158,7 +158,7 @@
         "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+          "/Users/johnatan/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -247,7 +247,7 @@
         "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+          "/Users/johnatan/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"

@@ -1,0 +1,143 @@
+#%RAML 1.0
+title: Challenge Tecnico API
+description: Challenge para candidatos a Backend Developers - PatagonianTech
+mediaType: application/json
+
+/songs:
+  description: Collection of available songs
+  get:
+    description: Get a list of songs based on the artist name.
+    queryParameters:
+      artistName:
+        description: "The name of the artist (case insensitive and doesn't need to match the whole name of the artist)"
+        required: true
+        minLength: 3
+        type: string
+        example: "Red Hot Chili"
+      pageNumber:
+        description: "The page number to find the songs by artist"
+        required: true
+        minLength: 1
+        type: int
+        example: "2"
+      pageSize:
+        description: "The number of records presented per page"
+        required: true
+        minLength: 1
+        type: int
+        example: "20"
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "songs": [
+                  {
+                      "songId": "4PpuZIMmeng6qPicveSI22",
+                      "songTitle": "Beso"
+                  },
+                  {
+                      "songId": "4RBCEwBRA0oHa49UwmhT98",
+                      "songTitle": "Si Hay Algo"
+                  },
+                  {
+                      "songId": "4zi7au8q5S4dK4Rs4731Vw",
+                      "songTitle": "Un Día Más"
+                  },
+                  {
+                      "songId": "58cLm4PaHNt8DDr9ayZnNz",
+                      "songTitle": "Doma"
+                  },
+                  {
+                      "songId": "5f7PiEvWQfOdvCfnrvmv6O",
+                      "songTitle": "No Me Quiero Mojar"
+                  },
+                  {
+                      "songId": "5HUC4InJ0q2HI4K7lnb34r",
+                      "songTitle": "No Quise"
+                  },
+                  {
+                      "songId": "5iP1zdcSsg8KPRiY9Zssx7",
+                      "songTitle": "Sábanas Tibias"
+                  },
+                  {
+                      "songId": "5Up8c8k5q12n0ssZdPfilJ",
+                      "songTitle": "Para Abajo y para Atrás"
+                  },
+                  {
+                      "songId": "5zLnarObwxZDTn6IZ0yXAs",
+                      "songTitle": "Cumbia Del Bienvenido"
+                  },
+                  {
+                      "songId": "6aommJFM8i3iT4inKuDSXh",
+                      "songTitle": "Chachachá"
+                  }
+                ],
+                "paginator": {
+                  "totalCount": 37,
+                  "pageSize": 10,
+                  "currentPage": 3,
+                  "totalPages": 4,
+                  "hasNextPage": true,
+                  "hasPreviousPage": true
+                }
+              }
+      404:
+          body:
+            application/json:
+              example: |
+                {"message": "Songs not found"}
+  /{songId}:
+    description: Song entity
+    get:
+      description: Get the song with `songId = {songId}`
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "artists": [
+                    {
+                      "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/08td7MxkoHQkXnWAYD8d6Q"
+                      },
+                      "href": "https://api.spotify.com/v1/artists/08td7MxkoHQkXnWAYD8d6Q",
+                      "id": "08td7MxkoHQkXnWAYD8d6Q",
+                      "name": "Tania Bowra",
+                      "type": "artist",
+                      "uri": "spotify:artist:08td7MxkoHQkXnWAYD8d6Q"
+                    }
+                  ],
+                  "disc_number": 1,
+                  "duration_ms": 276773,
+                  "explicit": false,
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2TpxZ7JUBn3uw46aR7qd6V"
+                  },
+                  "href": "https://api.spotify.com/v1/tracks/2TpxZ7JUBn3uw46aR7qd6V",
+                  "id": "2TpxZ7JUBn3uw46aR7qd6V",
+                  "is_local": false,
+                  "is_playable": true,
+                  "name": "All I Want",
+                  "preview_url": "https://p.scdn.co/mp3-preview/12b8cee72118f995f5494e1b34251e4ac997445e?cid=774b29d4f13844c495f206cafdad9c86",
+                  "track_number": 1,
+                  "type": "track",
+                  "uri": "spotify:track:2TpxZ7JUBn3uw46aR7qd6V"
+                }
+        404:
+          body:
+            application/json:
+              example: |
+                {"message": "Song not found"}
+/artists/{artistsIds}:
+  description: Collection of conect, load and charge the data from Spotify Api, into local database
+  get:
+    description: Get the artists songs with `artistsIds = {artistsId,artistsId,artistsId}`, limit of 15 artistsId iseparated by commas
+    responses:
+        200:
+          body:
+            application/json:
+              example: |
+                Finish

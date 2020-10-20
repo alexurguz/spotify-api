@@ -1,24 +1,16 @@
 ﻿<Properties StartupConfiguration="{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}|Spotify.Api">
   <MonoDevelop.Ide.ItemProperties.SpotifyApi.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Spotify.Api/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpotifyApi.Utilities/Config.cs">
     <Files>
-      <File FileName="Spotify.Api/Properties/launchSettings.json" Line="19" Column="7" />
+      <File FileName="SpotifyApi.Core/UseCase/ApiMusicUseCaseImpl.cs" Line="103" Column="14" />
+      <File FileName="Spotify.Api/appsettings.json" Line="4" Column="5" />
+      <File FileName="SpotifyApi.Utilities/Config.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SpotifyApi" expanded="True">
-            <Node name="SpotifyApi.Api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Response" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
-            <Node name="SpotifyApi.Core" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="CustomEntities" selected="True" />
-              <Node name="DTOs" expanded="True" />
-            </Node>
+            <Node name="SpotifyApi.Api" selected="True" />
           </Node>
         </State>
       </Pad>
