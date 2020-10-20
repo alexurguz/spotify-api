@@ -1,0 +1,14 @@
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Infrastructure.deps.json
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Infrastructure.dll
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Infrastructure.pdb
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Core.dll
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Utilities.dll
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Core.pdb
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/bin/Release/netstandard2.1/SpotifyApi.Utilities.pdb
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.csprojAssemblyReference.cache
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.AssemblyInfoInputs.cache
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.AssemblyInfo.cs
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.csproj.CopyComplete
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.dll
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/Release/netstandard2.1/SpotifyApi.Infrastructure.pdb

@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    hostname: spotifyDB
+    ports:
+      - "1433:1433"
+    expose:
+      - "1433"
+    networks:
+      spotify-net:
+        ipv4_address: 192.0.0.2
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: A_1234567O
+  spotify-api:
+    image: patagoian_test
+    hostname: spotify-api
+    ports:
+      - "80:80"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - "database"
+    networks:
+      spotify-net:
+        ipv4_address: 192.0.0.3
+networks:
+  spotify-net:
+    external: true

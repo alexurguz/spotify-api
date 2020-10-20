@@ -1,0 +1,9 @@
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/bin/Release/netstandard2.1/SpotifyApi.Utilities.deps.json
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/bin/Release/netstandard2.1/SpotifyApi.Utilities.dll
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/bin/Release/netstandard2.1/SpotifyApi.Utilities.pdb
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Release/netstandard2.1/SpotifyApi.Utilities.csprojAssemblyReference.cache
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Release/netstandard2.1/SpotifyApi.Utilities.AssemblyInfoInputs.cache
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Release/netstandard2.1/SpotifyApi.Utilities.AssemblyInfo.cs
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Release/netstandard2.1/SpotifyApi.Utilities.csproj.CoreCompileInputs.cache
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Release/netstandard2.1/SpotifyApi.Utilities.dll
+/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/Release/netstandard2.1/SpotifyApi.Utilities.pdb

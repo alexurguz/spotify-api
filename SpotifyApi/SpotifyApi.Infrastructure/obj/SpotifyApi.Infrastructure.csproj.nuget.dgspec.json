@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/SpotifyApi.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/SpotifyApi.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/SpotifyApi.Core.csproj",
+        "projectName": "SpotifyApi.Core",
+        "projectPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/SpotifyApi.Core.csproj",
+        "packagesPath": "/Users/johnatan/.nuget/packages/",
+        "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj": {
+                "projectPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/SpotifyApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/SpotifyApi.Infrastructure.csproj",
+        "projectName": "SpotifyApi.Infrastructure",
+        "projectPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/SpotifyApi.Infrastructure.csproj",
+        "packagesPath": "/Users/johnatan/.nuget/packages/",
+        "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/SpotifyApi.Core.csproj": {
+                "projectPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/SpotifyApi.Core.csproj"
+              },
+              "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj": {
+                "projectPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.3, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj",
+        "projectName": "SpotifyApi.Utilities",
+        "projectPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/SpotifyApi.Utilities.csproj",
+        "packagesPath": "/Users/johnatan/.nuget/packages/",
+        "outputPath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Utilities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/johnatan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

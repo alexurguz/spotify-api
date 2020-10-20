@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "jdxuMxta0GKwn3jlsZTP3+MOSWksmrcU2qH2y1otzqMPmP2+3ND2gEousuqjVL1sKQbErQQ40YbTQFKv/4B1zw==",
+  "success": true,
+  "projectFilePath": "/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/SpotifyApi.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/johnatan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.9/microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/microsoft.extensions.options/3.1.9/microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/microsoft.extensions.primitives/3.1.9/microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/system.memory/4.5.2/system.memory.4.5.2.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg.sha512",
+    "/Users/johnatan/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.1/system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

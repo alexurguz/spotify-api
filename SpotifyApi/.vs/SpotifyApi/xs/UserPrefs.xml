@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}|Spotify.Api">
+  <MonoDevelop.Ide.ItemProperties.SpotifyApi.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spotify.Api/Properties/launchSettings.json">
+    <Files>
+      <File FileName="Spotify.Api/Properties/launchSettings.json" Line="19" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpotifyApi" expanded="True">
+            <Node name="SpotifyApi.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Response" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+            <Node name="SpotifyApi.Core" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="CustomEntities" selected="True" />
+              <Node name="DTOs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/johnatan/Documents/Projects/SpotifyApi/SpotifyApi/SpotifyApi.Core/Interfaces/UseCase/ISongUsecase.cs" relfile="SpotifyApi.Core/Interfaces/UseCase/ISongUsecase.cs" line="16" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

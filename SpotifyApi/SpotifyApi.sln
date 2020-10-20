@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyApi.Api", "Spotify.Api\SpotifyApi.Api.csproj", "{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyApi.Core", "SpotifyApi.Core\SpotifyApi.Core.csproj", "{DE5B345C-3A64-4D35-A6ED-D38F08014375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyApi.Infrastructure", "SpotifyApi.Infrastructure\SpotifyApi.Infrastructure.csproj", "{78EDB1C6-E8A5-4618-9B41-64F11EC0D7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyApi.Utilities", "SpotifyApi.Utilities\SpotifyApi.Utilities.csproj", "{B4514890-B6E6-445C-808C-39550707FF16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF8BCB7-DD3F-447F-83D9-7A21ABE3BA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5B345C-3A64-4D35-A6ED-D38F08014375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5B345C-3A64-4D35-A6ED-D38F08014375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5B345C-3A64-4D35-A6ED-D38F08014375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5B345C-3A64-4D35-A6ED-D38F08014375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EDB1C6-E8A5-4618-9B41-64F11EC0D7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EDB1C6-E8A5-4618-9B41-64F11EC0D7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EDB1C6-E8A5-4618-9B41-64F11EC0D7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EDB1C6-E8A5-4618-9B41-64F11EC0D7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4514890-B6E6-445C-808C-39550707FF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4514890-B6E6-445C-808C-39550707FF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4514890-B6E6-445C-808C-39550707FF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4514890-B6E6-445C-808C-39550707FF16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
